@@ -1,0 +1,13 @@
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.deps.json
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.dll
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\obj\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.AssemblyInfoInputs.cache
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\obj\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.AssemblyInfo.cs
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\obj\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.csprojAssemblyReference.cache
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.pdb
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\obj\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.dll
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\obj\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.pdb
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Domain.dll
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.dll
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.pdb
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\bin\Debug\netcoreapp3.0\Consultorio.Domain.pdb
+C:\Repos\ConsultorioBack\Consultorio.Infra.Data.Migrations\obj\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.csproj.CopyComplete

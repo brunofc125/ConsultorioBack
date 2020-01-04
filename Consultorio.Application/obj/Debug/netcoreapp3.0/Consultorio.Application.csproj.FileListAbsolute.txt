@@ -1,0 +1,11 @@
+C:\Repos\ConsultorioBack\Consultorio.Application\bin\Debug\netcoreapp3.0\Consultorio.Application.deps.json
+C:\Repos\ConsultorioBack\Consultorio.Application\bin\Debug\netcoreapp3.0\Consultorio.Application.dll
+C:\Repos\ConsultorioBack\Consultorio.Application\bin\Debug\netcoreapp3.0\Consultorio.Application.pdb
+C:\Repos\ConsultorioBack\Consultorio.Application\obj\Debug\netcoreapp3.0\Consultorio.Application.csprojAssemblyReference.cache
+C:\Repos\ConsultorioBack\Consultorio.Application\obj\Debug\netcoreapp3.0\Consultorio.Application.AssemblyInfoInputs.cache
+C:\Repos\ConsultorioBack\Consultorio.Application\obj\Debug\netcoreapp3.0\Consultorio.Application.AssemblyInfo.cs
+C:\Repos\ConsultorioBack\Consultorio.Application\obj\Debug\netcoreapp3.0\Consultorio.Application.dll
+C:\Repos\ConsultorioBack\Consultorio.Application\obj\Debug\netcoreapp3.0\Consultorio.Application.pdb
+C:\Repos\ConsultorioBack\Consultorio.Application\bin\Debug\netcoreapp3.0\Consultorio.Domain.dll
+C:\Repos\ConsultorioBack\Consultorio.Application\bin\Debug\netcoreapp3.0\Consultorio.Domain.pdb
+C:\Repos\ConsultorioBack\Consultorio.Application\obj\Debug\netcoreapp3.0\Consultorio.Application.csproj.CopyComplete

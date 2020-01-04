@@ -1,0 +1,8 @@
+C:\Repos\ConsultorioBack\Consultorio.Domain\bin\Debug\netcoreapp3.0\Consultorio.Domain.deps.json
+C:\Repos\ConsultorioBack\Consultorio.Domain\bin\Debug\netcoreapp3.0\Consultorio.Domain.dll
+C:\Repos\ConsultorioBack\Consultorio.Domain\bin\Debug\netcoreapp3.0\Consultorio.Domain.pdb
+C:\Repos\ConsultorioBack\Consultorio.Domain\obj\Debug\netcoreapp3.0\Consultorio.Domain.csprojAssemblyReference.cache
+C:\Repos\ConsultorioBack\Consultorio.Domain\obj\Debug\netcoreapp3.0\Consultorio.Domain.AssemblyInfoInputs.cache
+C:\Repos\ConsultorioBack\Consultorio.Domain\obj\Debug\netcoreapp3.0\Consultorio.Domain.AssemblyInfo.cs
+C:\Repos\ConsultorioBack\Consultorio.Domain\obj\Debug\netcoreapp3.0\Consultorio.Domain.dll
+C:\Repos\ConsultorioBack\Consultorio.Domain\obj\Debug\netcoreapp3.0\Consultorio.Domain.pdb
