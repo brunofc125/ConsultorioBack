@@ -333,15 +333,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/3.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net461/dotnet-aspnet-codegenerator-design.exe": {}
-        },
-        "runtime": {
-          "lib/net461/dotnet-aspnet-codegenerator-design.exe": {}
-        }
-      },
       "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -1906,29 +1897,6 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
-      ]
-    },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/3.1.0": {
-      "sha512": "ZHXVe8nDkHXmPlBNGOl3SIxoUKfah2OJOKKmq769gBMqHJMaOrFKhPYsHdTORjKUtwc3AlO1CMLgnljFyyxA/Q==",
-      "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.design/3.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "lib/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll",
-        "lib/netcoreapp3.1/dotnet-aspnet-codegenerator-design.xml",
-        "microsoft.visualstudio.web.codegeneration.design.3.1.0.nupkg.sha512",
-        "microsoft.visualstudio.web.codegeneration.design.nuspec",
-        "runtimes/win-arm/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win-arm/lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "runtimes/win-arm64/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win-arm64/lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "runtimes/win7-x64/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win7-x64/lib/net461/dotnet-aspnet-codegenerator-design.xml",
-        "runtimes/win7-x86/lib/net461/dotnet-aspnet-codegenerator-design.exe",
-        "runtimes/win7-x86/lib/net461/dotnet-aspnet-codegenerator-design.xml"
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
@@ -5160,8 +5128,7 @@
       "Consultorio.Infra.Data.Migrations >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.0",
-      "Microsoft.Extensions.Logging.Debug >= 3.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0"
+      "Microsoft.Extensions.Logging.Debug >= 3.1.0"
     ]
   },
   "packageFolders": {
@@ -5171,11 +5138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.API\\Consultorio.API.csproj",
+      "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.API\\Consultorio.API.csproj",
       "projectName": "Consultorio.API",
-      "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.API\\Consultorio.API.csproj",
+      "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.API\\Consultorio.API.csproj",
       "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.API\\obj\\",
+      "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5195,14 +5162,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj": {
-              "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj"
+            "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj": {
+              "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj"
             },
-            "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj": {
-              "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj"
+            "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj": {
+              "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj"
             },
-            "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj": {
-              "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj"
+            "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj": {
+              "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj"
             }
           }
         }
@@ -5229,10 +5196,6 @@
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[3.1.0, )"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "[3.1.0, )"
           }
         },
         "imports": [
@@ -5256,17 +5219,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    }
-  ]
+  }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj": {}
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj": {
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
+        "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
         "projectName": "Consultorio.Application",
-        "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
+        "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
         "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.Application\\obj\\",
+        "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
-                "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj"
+              "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
+                "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
+        "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
         "projectName": "Consultorio.Domain",
-        "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
+        "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
         "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\obj\\",
+        "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -59,6 +59,5 @@ C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\Consultorio.App
 C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\Consultorio.Domain.pdb
 C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.pdb
 C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Debug.dll
-C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\dotnet-aspnet-codegenerator-design.exe
 C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.dll
 C:\Repos\ConsultorioBack\Consultorio.API\bin\Debug\netcoreapp3.0\Consultorio.Infra.Data.Migrations.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj": {}
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
+        "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
         "projectName": "Consultorio.Domain",
-        "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
+        "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj",
         "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\obj\\",
+        "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -60,14 +60,14 @@
         }
       }
     },
-    "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj": {
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj",
+        "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj",
         "projectName": "Consultorio.Infra.Data.Migrations",
-        "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj",
+        "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\Consultorio.Infra.Data.Migrations.csproj",
         "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data.Migrations\\obj\\",
+        "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data.Migrations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -87,8 +87,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj": {
-                "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj"
+              "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj": {
+                "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj": {
+    "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj",
         "projectName": "Consultorio.Infra.Data",
-        "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj",
+        "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\Consultorio.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.Infra.Data\\obj\\",
+        "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -157,8 +157,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
-                "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj"
+              "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
+                "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj"
               }
             }
           }
