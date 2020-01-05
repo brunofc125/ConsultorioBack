@@ -45,15 +45,15 @@ namespace Consultorio.Infra.Data.Repository
         {
             IEnumerable<Agendamento> listaAgendamento;
             if (todos)
-                listaAgendamento = this.context.Set<Agendamento>().ToList();
+                listaAgendamento = this.context.Set<Agendamento>().OrderBy(x => x.HorarioInicial).ToList();
             else
-                listaAgendamento = this.context.Set<Agendamento>().Where(x => x.HorarioInicial.Date.Equals(horario.Date)).ToList();
+                listaAgendamento = this.context.Set<Agendamento>().Where(x => x.HorarioInicial.Date.Equals(horario.Date)).OrderBy(x => x.HorarioInicial).ToList();
             return listaAgendamento;
         }
 
         public IEnumerable<Agendamento> ObterAgendamentos(string nome)
         {
-            var listaAgendamento = this.context.Agendamento.Include(a => a.Paciente).Where(a => a.Paciente.Nome.Contains(nome)).ToList();
+            var listaAgendamento = this.context.Agendamento.Include(a => a.Paciente).Where(a => a.Paciente.Nome.Contains(nome)).OrderBy(x => x.HorarioInicial).ToList();
             return listaAgendamento;
         }
 

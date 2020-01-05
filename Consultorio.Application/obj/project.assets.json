@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
+      "projectUniqueName": "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
       "projectName": "Consultorio.Application",
-      "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
+      "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Application\\Consultorio.Application.csproj",
       "packagesPath": "C:\\Users\\NOTE 163\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Application\\obj\\",
+      "outputPath": "C:\\Repos\\consultorioBack\\Consultorio.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -57,8 +57,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
-              "projectPath": "C:\\Repos\\ConsultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj"
+            "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj": {
+              "projectPath": "C:\\Repos\\consultorioBack\\Consultorio.Domain\\Consultorio.Domain.csproj"
             }
           }
         }

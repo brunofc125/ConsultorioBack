@@ -20,7 +20,7 @@ namespace Consultorio.API.Controllers
         }
 
         [HttpPost]
-        public string CadastrarUsuario([FromBody]UsuarioViewModel usuarioViewModel)
+        public bool CadastrarUsuario([FromBody]UsuarioViewModel usuarioViewModel)
         {
             return this.usuarioService.CadastrarUsuario(usuarioViewModel);
         }

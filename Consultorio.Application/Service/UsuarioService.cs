@@ -16,18 +16,14 @@ namespace Consultorio.Application.Service
             this.usuarioRepository = usuarioRepositoryParam;
         }
 
-        public string CadastrarUsuario(UsuarioViewModel usuarioViewModel)
+        public bool CadastrarUsuario(UsuarioViewModel usuarioViewModel)
         {
             Usuario u = this.usuarioRepository.GetUsuarioLogin(usuarioViewModel.Login);
             if (u == null && this.usuarioRepository.CadastrarUsuario(new Usuario(usuarioViewModel.Nome, usuarioViewModel.Login, usuarioViewModel.Senha)))
             {
-                return "Usuário cadastrado com sucesso!";
+                return true;
             }
-            else if (u != null)
-            {
-                return "Já existe usuário com este login!";
-            }
-            return "Erro no cadastro deste usuário!";
+            return false;
         }
 
         public UsuarioViewModel GetUsuario(string login, string senha)

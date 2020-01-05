@@ -7,7 +7,7 @@ namespace Consultorio.Application.Service.Interface
 {
     public interface IUsuarioService
     {
-        public string CadastrarUsuario(UsuarioViewModel usuarioViewModel);
+        public bool CadastrarUsuario(UsuarioViewModel usuarioViewModel);
         public UsuarioViewModel GetUsuario(string login, string senha);
         public UsuarioViewModel GetUsuario(string id);
         public IEnumerable<UsuarioViewModel> ObterProdutos(string nome);
