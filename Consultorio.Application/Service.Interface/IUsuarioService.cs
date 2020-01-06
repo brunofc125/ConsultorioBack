@@ -10,7 +10,7 @@ namespace Consultorio.Application.Service.Interface
         public bool CadastrarUsuario(UsuarioViewModel usuarioViewModel);
         public UsuarioViewModel GetUsuario(string login, string senha);
         public UsuarioViewModel GetUsuario(string id);
-        public IEnumerable<UsuarioViewModel> ObterProdutos(string nome);
+        public IEnumerable<UsuarioViewModel> ObterUsuarios(string nome);
         public bool DeletarUsuario(string id);
         public bool AtualizarUsuario(UsuarioViewModel usuario);
     }

@@ -19,9 +19,10 @@ namespace Consultorio.Application.Service
         public bool CadastrarUsuario(UsuarioViewModel usuarioViewModel)
         {
             Usuario u = this.usuarioRepository.GetUsuarioLogin(usuarioViewModel.Login);
-            if (u == null && this.usuarioRepository.CadastrarUsuario(new Usuario(usuarioViewModel.Nome, usuarioViewModel.Login, usuarioViewModel.Senha)))
+            if (u == null)
             {
-                return true;
+                if(this.usuarioRepository.CadastrarUsuario(new Usuario(usuarioViewModel.Nome, usuarioViewModel.Login, usuarioViewModel.Senha)) )
+                    return true;
             }
             return false;
         }
@@ -42,7 +43,7 @@ namespace Consultorio.Application.Service
             return null;
         }
 
-        public IEnumerable<UsuarioViewModel> ObterProdutos(string nome)
+        public IEnumerable<UsuarioViewModel> ObterUsuarios(string nome)
         {
             var listaUsuario = this.usuarioRepository.ObterUsuarios(nome);
             var listaUsuarioViewModel = new List<UsuarioViewModel>();
@@ -53,10 +54,13 @@ namespace Consultorio.Application.Service
             }
             return listaUsuarioViewModel;
         }
+
         public bool DeletarUsuario(string id)
         {
             var u = this.usuarioRepository.GetUsuario(id);
-            return this.usuarioRepository.DeletarUsuario(u);
+            if(u != null)
+                return this.usuarioRepository.DeletarUsuario(u);
+            return false;
         }
 
         public bool AtualizarUsuario(UsuarioViewModel usuario)

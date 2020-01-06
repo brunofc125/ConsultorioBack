@@ -38,7 +38,7 @@ namespace Consultorio.API.Controllers
         [HttpGet]
         public IEnumerable<UsuarioViewModel> ObterUsuarios()
         {
-            var lista = this.usuarioService.ObterProdutos(Request.Query["nome"]);
+            var lista = this.usuarioService.ObterUsuarios(Request.Query["nome"]);
             return lista;
         }
 

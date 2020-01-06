@@ -14,7 +14,6 @@ namespace Consultorio.Application.Service.Interface
         public bool AtualizarAgendamento(AgendamentoViewModel agendamento);
         public IEnumerable<AgendamentoViewModel> ObterAgendamentos(DateTime horario, bool todos);
         public IEnumerable<AgendamentoViewModelPaciente> ObterAgendamentosPaciente(DateTime horario, bool todos);
-        public IEnumerable<AgendamentoViewModelPaciente> ObterAgendamentosPaciente();
         public IEnumerable<AgendamentoViewModelPaciente> ObterAgendamentosPaciente(string nome);
 
     }

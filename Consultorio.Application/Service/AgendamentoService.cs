@@ -18,6 +18,10 @@ namespace Consultorio.Application.Service
             this.agendamentoRepository = agendamentoRepositoryParam;
             this.pacienteRepository = pacienteRepositoryParam;
         }
+        public AgendamentoService(IAgendamentoRepository agendamentoRepositoryParam)
+        {
+            this.agendamentoRepository = agendamentoRepositoryParam;
+        }
         public bool AtualizarAgendamento(AgendamentoViewModel agendamento)
         {
             var a = new Agendamento(agendamento.Id, agendamento.IdUsuario, agendamento.IdPaciente, agendamento.HorarioInicial, agendamento.HorarioFinal, agendamento.Observacao);
@@ -60,10 +64,15 @@ namespace Consultorio.Application.Service
         public AgendamentoViewModelPaciente GetAgendamentoPaciente(string id)
         {
             var a = this.agendamentoRepository.GetAgendamento(id);
-            var p = this.pacienteRepository.GetPaciente(a.IdPaciente.ToString());
-            var pac = new PacienteViewModel(p.Id, p.Nome, p.DataNasc);
-            if (a != null && p!= null)
-                return new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
+            if (a != null)
+            {
+                var p = this.pacienteRepository.GetPaciente(a.IdPaciente.ToString());
+                if (p != null)
+                {
+                    var pac = new PacienteViewModel(p.Id, p.Nome, p.DataNasc);
+                    return new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
+                }
+            }
             return null;
         }
 
@@ -91,11 +100,6 @@ namespace Consultorio.Application.Service
                 listaAgendamentoViewModelPaciente.Add(aViewModel);
             }
             return listaAgendamentoViewModelPaciente;
-        }
-
-        public IEnumerable<AgendamentoViewModelPaciente> ObterAgendamentosPaciente()
-        {
-            throw new NotImplementedException();
         }
 
         public IEnumerable<AgendamentoViewModelPaciente> ObterAgendamentosPaciente(string nome)
