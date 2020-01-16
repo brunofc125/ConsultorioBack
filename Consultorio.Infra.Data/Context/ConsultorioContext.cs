@@ -14,11 +14,13 @@ namespace Consultorio.Infra.Data.Context
         }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Paciente> Paciente { get; set; }
+        public DbSet<Medico> Medico { get; set; }
         public DbSet<Agendamento> Agendamento { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new PacienteConfiguration());
+            modelBuilder.ApplyConfiguration(new MedicoConfiguration());
             modelBuilder.ApplyConfiguration(new AgendamentoConfiguration());
             base.OnModelCreating(modelBuilder);
         }

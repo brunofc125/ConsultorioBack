@@ -21,8 +21,7 @@ namespace Consultorio.Application.Service
             Usuario u = this.usuarioRepository.GetUsuarioLogin(usuarioViewModel.Login);
             if (u == null)
             {
-                if(this.usuarioRepository.CadastrarUsuario(new Usuario(usuarioViewModel.Nome, usuarioViewModel.Login, usuarioViewModel.Senha)) )
-                    return true;
+                return this.usuarioRepository.CadastrarUsuario(new Usuario(usuarioViewModel.Nome, usuarioViewModel.Login, usuarioViewModel.Senha));
             }
             return false;
         }

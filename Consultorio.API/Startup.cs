@@ -48,10 +48,12 @@ namespace Consultorio.API
             services.AddScoped<IPacienteService, PacienteService>();
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IAgendamentoService, AgendamentoService>();
+            services.AddScoped<IMedicoService, MedicoService>();
 
             services.AddScoped<IPacienteRepository, PacienteRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IAgendamentoRepository, AgendamentoRepository>();
+            services.AddScoped<IMedicoRepository, MedicoRepository>();
 
             services.AddDbContextPool<ConsultorioContext>(this.Builder());
 

@@ -24,7 +24,7 @@ namespace Consultorio.Application.Service
         }
         public bool AtualizarAgendamento(AgendamentoViewModel agendamento)
         {
-            var a = new Agendamento(agendamento.Id, agendamento.IdUsuario, agendamento.IdPaciente, agendamento.HorarioInicial, agendamento.HorarioFinal, agendamento.Observacao);
+            var a = new Agendamento(agendamento.Id, agendamento.IdUsuario, agendamento.IdPaciente, agendamento.IdMedico, agendamento.HorarioInicial, agendamento.HorarioFinal, agendamento.Observacao);
             if (a.HorarioInicial.CompareTo(a.HorarioFinal) <= 0)
             {
                 if (this.agendamentoRepository.ObterAgendamentos(a, true).Count() == 0)
@@ -37,7 +37,7 @@ namespace Consultorio.Application.Service
 
         public bool CadastrarAgendamento(AgendamentoViewModel agendamento)
         {
-            var a = new Agendamento(agendamento.Id, agendamento.IdUsuario, agendamento.IdPaciente, agendamento.HorarioInicial, agendamento.HorarioFinal, agendamento.Observacao);
+            var a = new Agendamento(agendamento.Id, agendamento.IdUsuario, agendamento.IdPaciente, agendamento.IdMedico, agendamento.HorarioInicial, agendamento.HorarioFinal, agendamento.Observacao);
             if (a.HorarioInicial.CompareTo(a.HorarioFinal) <= 0 && this.agendamentoRepository.ObterAgendamentos(a, false).Count() == 0)
             {
                 return this.agendamentoRepository.CadastrarAgendamento(a);
@@ -57,7 +57,7 @@ namespace Consultorio.Application.Service
         {
             var a = this.agendamentoRepository.GetAgendamento(id);
             if (a != null)
-                return new AgendamentoViewModel(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao);
+                return new AgendamentoViewModel(a.Id, a.IdUsuario, a.IdPaciente, a.IdMedico, a.HorarioInicial, a.HorarioFinal, a.Observacao);
             return null;
         }
 
@@ -70,7 +70,7 @@ namespace Consultorio.Application.Service
                 if (p != null)
                 {
                     var pac = new PacienteViewModel(p.Id, p.Nome, p.DataNasc);
-                    return new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
+                    return new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.IdMedico, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
                 }
             }
             return null;
@@ -82,7 +82,7 @@ namespace Consultorio.Application.Service
             var listaAgendamentoViewModel = new List<AgendamentoViewModel>();
             foreach (var a in listaAgendamento)
             {
-                var aViewModel = new AgendamentoViewModel(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao);
+                var aViewModel = new AgendamentoViewModel(a.Id, a.IdUsuario, a.IdPaciente, a.IdMedico, a.HorarioInicial, a.HorarioFinal, a.Observacao);
                 listaAgendamentoViewModel.Add(aViewModel);
             }
             return listaAgendamentoViewModel;
@@ -96,7 +96,7 @@ namespace Consultorio.Application.Service
             {
                 var p = this.pacienteRepository.GetPaciente(a.IdPaciente.ToString());
                 var pac = new PacienteViewModel(p.Id, p.Nome, p.DataNasc);
-                var aViewModel = new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
+                var aViewModel = new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.IdMedico, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
                 listaAgendamentoViewModelPaciente.Add(aViewModel);
             }
             return listaAgendamentoViewModelPaciente;
@@ -109,7 +109,7 @@ namespace Consultorio.Application.Service
             foreach (var a in listaAgendamento)
             {
                 var pac = new PacienteViewModel(a.Paciente.Id, a.Paciente.Nome, a.Paciente.DataNasc);
-                var aViewModel = new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
+                var aViewModel = new AgendamentoViewModelPaciente(a.Id, a.IdUsuario, a.IdPaciente, a.IdMedico, a.HorarioInicial, a.HorarioFinal, a.Observacao, pac);
                 listaAgendamentoViewModelPaciente.Add(aViewModel);
             }
             return listaAgendamentoViewModelPaciente;

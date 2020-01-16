@@ -31,6 +31,9 @@ namespace Consultorio.Infra.Data.Migrations.Migrations
                     b.Property<DateTime>("HorarioInicial")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("IdMedico")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("IdPaciente")
                         .HasColumnType("uniqueidentifier");
 
@@ -44,11 +47,35 @@ namespace Consultorio.Infra.Data.Migrations.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdMedico");
+
                     b.HasIndex("IdPaciente");
 
                     b.HasIndex("IdUsuario");
 
                     b.ToTable("Agendamento");
+                });
+
+            modelBuilder.Entity("Consultorio.Domain.Entity.Medico", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Crm")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataNasc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Medico");
                 });
 
             modelBuilder.Entity("Consultorio.Domain.Entity.Paciente", b =>
@@ -97,6 +124,11 @@ namespace Consultorio.Infra.Data.Migrations.Migrations
 
             modelBuilder.Entity("Consultorio.Domain.Entity.Agendamento", b =>
                 {
+                    b.HasOne("Consultorio.Domain.Entity.Medico", "Medico")
+                        .WithMany("Agendamentos")
+                        .HasForeignKey("IdMedico")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("Consultorio.Domain.Entity.Paciente", "Paciente")
                         .WithMany("Agendamentos")
                         .HasForeignKey("IdPaciente")
